@@ -1,5 +1,5 @@
 <template>
-  <div class="main-wrap">
+  <div class="main-wrap" >
     <main-header />
     <div class="container-general pt-15">
       <v-container>

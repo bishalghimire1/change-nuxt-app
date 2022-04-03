@@ -1,7 +1,7 @@
 <template>
   <div class="main-wrap">
     <main-header />
-    <div class="container-general pt-15">
+    <div class="container-general pt-15" id="blog" >
       <v-container>
         <v-row>
           <v-col cols="12">

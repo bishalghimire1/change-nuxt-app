@@ -2,7 +2,7 @@
   <div class="main-wrap">
     <main-header />
     <banner />
-    <div class="space-top-short">
+    <div class="space-top-short" id="pricing" >
       <company-logo />
     </div>
     <counter />

@@ -19,7 +19,7 @@
         >
           <counter dark />
         </div>
-        <!-- <div
+        <div
           id="testimonials"
           class="space-top"
         >
@@ -30,14 +30,14 @@
           class="space-top"
         >
           <pricing />
-        </div> -->
+        </div>
         <div
           id="timeline"
           class="space-top space-bottom container"
         >
         <timeline />
         </div>
-        <!-- <div
+        <div
           id="blog"
           class="space-top space-bottom"
         >
@@ -45,15 +45,15 @@
         </div>
         <div id="subscribe">
           <subscribe />
-        </div>  -->
+        </div> 
       </div>
       <main-footer />
-      <!-- <hidden point="smDown">
+      <hidden point="smDown">
         <corner />
       </hidden>
       <hidden point="mdDown">
         <notification />
-      </hidden> -->
+      </hidden>
     </div>
   </div>
 </template>

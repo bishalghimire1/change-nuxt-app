@@ -1,5 +1,5 @@
 <template>
-  <div class="testimonial-wrap">
+  <div class="testimonial-wrap" id="testimonials">
     <h3 class="display-2 text-center mb-4">
       Testimonials
     </h3>
