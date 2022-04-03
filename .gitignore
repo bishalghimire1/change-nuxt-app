@@ -1,0 +1,10 @@
+.nuxt
+.node_modules
+.dist
+
+.nuxt
+node_modules
+dist
+.nuxt
+/node_modules
+/dist
