@@ -4,9 +4,13 @@
   @include palette-text-primary;
   display: flex;
   img {
-    width: 54px;
-    height: 54px;
+    width: auto;
+    height: auto;
+    max-width: 148px;
+    object-fit: cover;
   }
+
+
 }
 
 .landscape {
@@ -24,5 +28,7 @@
   img {
     margin: 0 auto $spacing1;
     display: block;
+    height: auto;
+    width: 90px;
   }
 }

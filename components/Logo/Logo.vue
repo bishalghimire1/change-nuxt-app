@@ -1,7 +1,7 @@
 <template>
   <span :class="type" class="logo">
     <img :src="logo" alt="logo" />
-    {{ type !== 'only' ? brand.starter.name : '' }}
+    <!-- {{ type !== 'only' ? brand.starter.name : '' }} -->
   </span>
 </template>
 
