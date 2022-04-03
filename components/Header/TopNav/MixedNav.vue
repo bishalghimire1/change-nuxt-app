@@ -16,7 +16,7 @@
       >
         {{ $t('starter.header_'+item.name) }}
       </v-btn>
-      <v-menu
+      <!-- <v-menu
         :open-on-hover="hover"
         :position-x="0"
         max-height="480"
@@ -68,7 +68,7 @@
             </v-row>
           </v-container>
         </div>
-      </v-menu>
+      </v-menu> -->
     </scrollactive>
   </fragment>
 </template>
