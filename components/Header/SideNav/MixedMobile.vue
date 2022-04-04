@@ -43,7 +43,7 @@
       </v-list-group> -->
     </v-list>
     <v-divider />
-    <v-list dense>
+    <!-- <v-list dense>
       <v-list-item
         v-for="(item, index) in ['login', 'register']"
         :key="index"
@@ -55,7 +55,7 @@
           <v-list-item-title class="menu-list">{{ $t('common.header_'+item) }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-    </v-list>
+    </v-list> -->
   </fragment>
 </template>
 
