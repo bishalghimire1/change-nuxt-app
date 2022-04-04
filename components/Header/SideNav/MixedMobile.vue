@@ -14,7 +14,7 @@
           </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-      <v-list-group class="group-child">
+      <!-- <v-list-group class="group-child">
         <template v-slot:activator>
           <v-list-item class="has-child">
             <v-list-item-title class="menu-list">
@@ -40,7 +40,7 @@
             </v-list-item>
           </v-list-item-group>
         </v-list>
-      </v-list-group>
+      </v-list-group> -->
     </v-list>
     <v-divider />
     <v-list dense>
