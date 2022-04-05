@@ -6,20 +6,20 @@
         :options="slickOptions"
         @afterChange="handleAfterChange"
       >
-        <div class="slide" v-for="(index) in 3" :key="index">
+        <div class="slide" v-for="(item,index) in data" :key="index">
           <div class="inner">
             <v-container>
               <v-row>
                 <v-col sm="7" lg="6" cols="12">
                   <div class="text">
-                    <h4 class="text-h4">{{ $t('starter.banner_title') }}</h4>
-                    <h5 class="text-h5">{{ $t('starter.banner_subtitle') }}</h5>
+                    <h4 class="text-h4">{{item.title}}</h4>
+                    <h5 class="text-h5">{{ item.subtitle }}</h5>
                   </div>
                 </v-col>
               </v-row>
             </v-container>
             <div class="img">
-              <img src="/images/starter/Illustration.png" alt="illustration" />
+              <img :src="item.img" alt="illustration" />
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
             text
           >
             <strong>First Slide</strong>
-            Interdum et malesuada fames ac ante
+            this is first slide
           </v-btn>
           <v-divider class="divider" vertical inset />
           <v-btn
@@ -43,7 +43,7 @@
             text
           >
             <strong>Second Slide</strong>
-            Interdum et malesuada fames ac ante
+            this is second slide
           </v-btn>
           <v-divider class="divider" vertical inset />
           <v-btn
@@ -52,7 +52,7 @@
             text
           >
             <strong>Third Slide</strong>
-            Interdum et malesuada fames ac ante
+           this is third slide :)
           </v-btn>
         </nav>
       </v-container>
@@ -66,6 +66,7 @@
 
 <script>
 import Hidden from '../Hidden';
+import {data } from "@/data/carousel"
 
 export default {
   components: {
@@ -74,6 +75,7 @@ export default {
   },
   data() {
     return {
+      data,
       loaded: false,
       currentSlide: 0,
       slickOptions: {
@@ -96,8 +98,13 @@ export default {
   },
   mounted() {
     this.loaded = true
+    // console.log($t('starter'))
   },
   methods: {
+     getImgUrl(image) {
+    // var images = require.context('../assets/', false, /\.png$/)
+    // return images('./' + image )
+  },
     handleAfterChange(event, slick, currentSlide) {
       this.currentSlide = currentSlide
     },
