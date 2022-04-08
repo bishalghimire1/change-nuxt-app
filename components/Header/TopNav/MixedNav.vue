@@ -2,7 +2,7 @@
   <fragment>
     <scrollactive
       v-if="isDesktop"
-      :offset="navOffset"
+      :offset="100"
       active-class="active"
       tag="div"
     >
@@ -74,7 +74,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../header-style.scss';
+@import "../header-style.scss";
 </style>
 
 <script>
@@ -83,40 +83,40 @@ export default {
     return {
       navOffset: 20,
       hover: false,
-      curURL: '',
-      curOrigin: '',
-      langPath: ''
-    }
+      curURL: "",
+      curOrigin: "",
+      langPath: "",
+    };
   },
   methods: {
     setOffset: function(offset) {
-      this.navOffset = offset
-    }
+      this.navOffset = offset;
+    },
   },
   mounted() {
-    this.curURL = window.location.href
-    this.curOrigin = window.location.origin
-    if (this.$i18n.locale !== 'en') {
-      this.langPath = '/' + this.$i18n.locale
+    this.curURL = window.location.href;
+    this.curOrigin = window.location.origin;
+    if (this.$i18n.locale !== "en") {
+      this.langPath = "/" + this.$i18n.locale;
     } else {
-      this.langPath = ''
+      this.langPath = "";
     }
   },
   computed: {
     isDesktop() {
-      const lgUp = this.$store.state.breakpoints.lgUp
-      return lgUp.indexOf(this.$mq) > -1
-    }
+      const lgUp = this.$store.state.breakpoints.lgUp;
+      return lgUp.indexOf(this.$mq) > -1;
+    },
   },
   props: {
     menuPrimary: {
       type: Array,
-      required: true
+      required: true,
     },
     menuSecondary: {
       type: Array,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
