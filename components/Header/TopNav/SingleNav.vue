@@ -38,6 +38,7 @@ export default {
   methods: {
     setOffset: function(offset) {
       this.navOffset = offset
+      
     }
   },
   computed: {

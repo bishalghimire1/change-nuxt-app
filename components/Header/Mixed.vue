@@ -96,10 +96,10 @@ export default {
       openNavMobile: null,
       menuSecondary: samplePages,
       menuPrimary: [
-        createData(navMenu[0], "#" + navMenu[0],-100),
-        createData(navMenu[1], "#" + navMenu[1],-100),
-        createData(navMenu[2], "#" + navMenu[2],-100),
-        createData(navMenu[3], "#" + navMenu[3], -40),
+        createData(navMenu[0], "#" + "tjenester",100),
+        createData(navMenu[1], "#" + "om-oss",100),
+        createData(navMenu[2], "#" + "verdier",100),
+        createData(navMenu[3], "#" + "Kontakt",100 ),
         // createData(navMenu[4], '#' + navMenu[4], -40)
       ],
     };

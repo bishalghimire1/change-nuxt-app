@@ -7,7 +7,7 @@
           <banner-slider />
         </div>
         <div
-          id="feature"
+          id="tjenester"
           class="space-top space-bottom"
         >
           <v-container>
@@ -20,13 +20,13 @@
           <counter dark />
         </div>
         <div
-          id="testimonials"
+          id="om-oss"
           class="space-top"
         >
           <Testimonials />
         </div> 
         <div
-          id="pricing"
+          id="verdier"
           class="space-top"
         >
           <pricing />
@@ -38,7 +38,7 @@
         <timeline />
         </div>
         <div
-          id="blog"
+          id="Kontakt"
           class="space-top space-bottom"
         >
           <blog />

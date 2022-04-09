@@ -2,7 +2,7 @@
   <fragment>
     <scrollactive
       v-if="isDesktop"
-      :offset="100"
+      :offset="100" 
       active-class="active"
       tag="div"
     >
@@ -70,6 +70,8 @@
         </div>
       </v-menu> -->
     </scrollactive>
+
+  
   </fragment>
 </template>
 
@@ -81,7 +83,7 @@
 export default {
   data() {
     return {
-      navOffset: 20,
+      navOffset: 100,
       hover: false,
       curURL: "",
       curOrigin: "",
@@ -103,6 +105,10 @@ export default {
     }
   },
   computed: {
+    isTablet() {
+      const mdDown = this.$store.state.breakpoints.mdDown
+      return mdDown.indexOf(this.$mq) > -1
+    },
     isDesktop() {
       const lgUp = this.$store.state.breakpoints.lgUp;
       return lgUp.indexOf(this.$mq) > -1;
